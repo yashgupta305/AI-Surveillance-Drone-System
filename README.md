@@ -48,7 +48,7 @@ A custom web-based control system for monitoring and controlling the drone in re
 - 🎮 Manual control interface (gimbal + movement)  
 - 🧭 Real-time LiDAR mapping panel  
 
-![GCS](images/Ground_Station_Control.png)
+![GCS](images/gcs_dashboard.png)
 
 ---
 
