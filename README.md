@@ -1,44 +1,107 @@
-# AI Surveillance Drone System
+# AI Surveillance Drone System 🚁
 
-An autonomous drone platform built with a Raspberry Pi companion computer and Pixhawk flight controller.
-
-The system integrates LiDAR perception, RTSP video streaming, MAVLink flight control, Thermal Camera and a custom web-based ground control station for real-time monitoring and control.
+An advanced AI-powered surveillance drone integrating real-time AI video transmission, LiDAR-based perception, and intelligent ground control for monitoring and autonomous operations.
 
 ---
 
-## Hardware Stack
+## 🚁 Drone Overview
+![Drone](images/drone_full.jpg)
 
-- Raspberry Pi 5 (Companion Computer)
-- Pixhawk 6C Mini (Flight Controller)
-- SIYI A8 Mini Camera
-- YDLIDAR A1M8
-- 6S LiPo Power System
+A custom-built hexacopter platform designed for real-time sensing, edge processing, and remote operation.
 
 ---
 
-## Features
+## 🔧 Hardware Stack
 
-- Real-time RTSP camera streaming
-- MAVLink communication with Pixhawk
-- LiDAR based obstacle mapping
-- Custom web-based Ground Control Station
-- Gimbal control through RC override
-- Multi-threaded sensor processing
+### Core Components:
+- **Flight Controller:** Pixhawk6c
+- **Onboard Computer:** Raspberry Pi 5  
+- **Transmission System:** Skydroid H12 Pro  
+- **Camera:** SIYI A8 Mini (RTSP stream)  
+- **LiDAR:** YDLiDAR A1M8  
+- **Optical Flow Sensor:** For position estimation (GPS-denied environments)
+- **GPS:** M9N GPS
 
----
+### Upcoming Integration:
+- 🔥 Thermal Camera (for night surveillance & heat signature detection)
 
-## System Architecture
-
-Coming soon...
-
----
-
-## Demo
-
-Coming soon...
+![Hardware](images/Hardware_setup.jpg)
 
 ---
 
-## Images
+## 📡 LiDAR Visualization (RViz)
 
-Coming soon...
+Real-time LiDAR scan data processed using ROS2 and visualized in RViz.
+
+![LiDAR](images/lidar_output.png)
+
+---
+
+## 🖥️ Ground Control Station (GCS)
+
+A custom web-based control system for monitoring and controlling the drone in real time.
+
+### Features:
+- 📺 Live video feed (RTSP stream from SIYI A8 Mini)  
+- 📊 Telemetry (battery, flight mode, system stats)  
+- 🚧 Obstacle detection (LiDAR-based distance estimation)  
+- 🎮 Manual control interface (gimbal + movement)  
+- 🧭 Real-time LiDAR mapping panel  
+
+![GCS](images/Ground_Station_Control.png)
+
+---
+
+## 🧠 System Architecture
+
+The system is divided into multiple layers:
+
+1. **Drone Layer**
+   - Pixhawk (flight control)
+   - Sensors (LiDAR, camera, optical flow)
+
+2. **Onboard Processing**
+   - Raspberry Pi 5
+   - Sensor data processing
+   - MAVLink communication
+
+3. **Communication Layer**
+   - Skydroid H12 Pro (RC + telemetry)
+   - RTSP video streaming
+
+4. **Ground Station**
+   - Web-based interface
+   - Real-time monitoring & control
+
+---
+
+## 🚀 Key Features
+
+- Real-time video streaming from onboard camera  
+- LiDAR-based obstacle detection and distance estimation  
+- MAVLink communication with Pixhawk  
+- Web-based Ground Control Station (GCS)  
+- Modular architecture for AI integration  
+- Designed for GPS-denied navigation (optical flow support)  
+
+---
+
+## 🧠 Tech Stack
+
+- Python  
+- OpenCV  
+- ROS2  
+- MAVLink (pymavlink / MAVSDK)  
+- Flask (Backend - GCS)  
+- HTML / CSS / JavaScript (Frontend)  
+
+---
+## ⚙️ Drone Hardware Specifications
+
+- Frame: Custom Carbon Fiber Hexacopter Frame  
+- Motors: 330KV Brushless DC Motors  
+- Propellers: 16 inch foldable Props  
+- ESC: 30A Oneshot ESCs  
+- Battery: 20,000mah LiPo Battery Pack  
+
+## 📁 Project Structure
