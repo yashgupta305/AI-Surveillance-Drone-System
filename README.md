@@ -96,12 +96,40 @@ The system is divided into multiple layers:
 - HTML / CSS / JavaScript (Frontend)  
 
 ---
-## ⚙️ Drone Hardware Specifications
-
-- Frame: Custom Carbon Fiber Hexacopter Frame  
-- Motors: 330KV Brushless DC Motors  
-- Propellers: 16 inch foldable Props  
-- ESC: 30A Oneshot ESCs  
-- Battery: 20,000mah LiPo Battery Pack  
 
 ## 📁 Project Structure
+
+---
+
+## 📌 Future Work
+
+- SLAM-based environment mapping 🗺️  
+- AI object detection (YOLO / Edge AI) 🤖  
+- Thermal vision integration 🔥  
+- Autonomous path planning 🧭  
+- Cloud-based monitoring system ☁️  
+
+---
+
+## 🎯 Applications
+
+- Surveillance & security  
+- Search and rescue operations  
+- Defense & reconnaissance  
+- Smart monitoring systems  
+
+---
+
+## ⚙️ Drone Hardware Specifications
+
+- Frame: Carbon Fiber Hexacopter Frame  
+- Motors: Brushless DC Motors  
+- Propellers: Carbon Fiber Props  
+- ESC: 30A BLHeli ESCs  
+- Battery: LiPo Battery Pack  
+
+---
+
+## 👨‍💻 Author
+
+**Yash Gupta**
